@@ -1,0 +1,48 @@
+div.navbar{
+  margin-bottom: 30px;
+}
+div.navbar nav{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+div.navbar nav ul.nav-list{
+  display: flex;  
+  list-style: none;
+  justify-content: flex-end;
+  gap: 40px;
+
+}
+div.navbar nav ul.nav-list li a{
+  color: hsl(236, 13%, 42%);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 200ms;
+}
+div.navbar nav ul.nav-list li a:active{
+  color: hsl(35, 77%, 62%);
+}
+div.navbar nav .logo img{
+  height: 30px;
+}
+a.menu-icon{
+  text-align: right;
+  grid-column: span 2;
+}
+.menu-icon{
+  display: none;
+}
+.nav-list{
+  display: block;
+}
+@media (max-width:680px){
+  div.navbar nav{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .menu-icon{
+    display: block;
+  }
+  div.navbar nav ul.nav-list{
+    display: none;
+  }
+}
