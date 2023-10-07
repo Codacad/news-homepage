@@ -7,15 +7,15 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <nav>
-        <a href="#" className="logo"><img src={Logo} alt="" /></a>
+        <Link to={'#'} className="logo"><img src={Logo} alt="" /></Link>
         <ul className='nav-list'>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to='/news'>News</Link></li>
-          <li><Link to="/popular">Popular</Link></li>
-          <li><Link to="/trending">Trending</Link></li>
-          <li><Link to="/category">Categories</Link></li>
+          <li><Link to={'#'}>Home</Link></li>
+          <li><Link to={'#'}>News</Link></li>
+          <li><Link to={"#"}>Popular</Link></li>
+          <li><Link to={'#'}>Trending</Link></li>
+          <li><Link to={'#'}>Categories</Link></li>
         </ul>
-        <a href="#" className="menu-icon"><img src={IconMenu} alt="" /></a>
+        <Link to="#" className="menu-icon"><img src={IconMenu} alt="" /></Link>
       </nav>
     </div>
   )
