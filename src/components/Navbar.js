@@ -3,7 +3,8 @@ import Logo from '../assets/images/logo.svg'
 import IconMenu from '../assets/images/icon-menu.svg';
 import { Link } from 'react-router-dom'
 import '../css/Navbar.css'
-const Navbar = () => {
+const Navbar = ({showSidebar, handleShowSidebar}) => {
+  console.log(showSidebar)
   return (
     <div className='navbar'>
       <nav>
@@ -15,7 +16,7 @@ const Navbar = () => {
           <li><Link to={'#'}>Trending</Link></li>
           <li><Link to={'#'}>Categories</Link></li>
         </ul>
-        <Link to="#" className="menu-icon"><img src={IconMenu} alt="" /></Link>
+        <Link onClick={handleShowSidebar} to="#" className="menu-icon"><img src={IconMenu} alt="" /></Link>
       </nav>
     </div>
   )
