@@ -13,6 +13,11 @@ div.navbar nav ul.nav-list{
   gap: 40px;
 
 }
+div.navbar nav a.logo{
+  display: flex;
+  width: 50px;
+}
+
 div.navbar nav ul.nav-list li a{
   color: hsl(236, 13%, 42%);
   text-decoration: none;
@@ -25,10 +30,6 @@ div.navbar nav ul.nav-list li a:active{
 div.navbar nav .logo img{
   height: 30px;
 }
-a.menu-icon{
-  text-align: right;
-  grid-column: span 2;
-}
 .menu-icon{
   display: none;
 }
@@ -37,10 +38,15 @@ a.menu-icon{
 }
 @media (max-width:680px){
   div.navbar nav{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .menu-icon{
+    width: 40px;
     display: block;
+    margin-left: auto;
+  }
+  .menu-icon img{
+    width: 40px;
   }
   div.navbar nav ul.nav-list{
     display: none;
